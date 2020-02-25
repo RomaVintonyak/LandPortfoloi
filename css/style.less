@@ -1,0 +1,42 @@
+//compress: true
+
+/*google foonts*/
+
+html{
+  font-size: 15px;
+}
+body{
+  font-family: sans-serif;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  color: @black;
+  margin: 0;
+  padding: 0;
+  background-color: @white;
+  overflow-x: hidden;
+}
+*::before, *::after{
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+a {
+  &:focus {
+    outline: none;
+  }
+}
+/*helpers*/
+@import "helpers.less";
+/*vars*/
+@import "vars.less";
+/*vendor*/
+/*main style block*/

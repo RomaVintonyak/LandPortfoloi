@@ -1,0 +1,63 @@
+//main: style.less
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.text__left {
+  text-align: left;
+}
+.text__right {
+  text-align: right;
+}
+.text__center {
+  text-align: center;
+}
+.text__bold {
+  color: @gray;
+  font-weight: 700;
+}
+.mt-6 {
+  margin-top: 6rem;
+  @media @tablet {
+    margin-top: 4rem;
+  }
+  @media @mobile {
+    margin-top: 2rem;
+  }
+}
+.mt-5 {
+  margin-top: 5rem;
+}
+.mt-4 {
+  margin-top: 4rem;
+  @media @mobile {
+    margin-top: 2rem;
+  }
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.zoomInn {
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  &:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.zoomOutt {
+  -webkit-transition: -webkit-transform 0.4s linear;
+  transition: -webkit-transform 0.4s linear;
+  transition: transform 0.4s linear;
+  transition: transform 0.4s linear, -webkit-transform 0.4s linear;
+  &:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
