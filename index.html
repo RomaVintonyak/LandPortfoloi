@@ -77,11 +77,16 @@
                 I'm a junior Frontend developer. I developing web sites for 8
                 months.
               </h4>
-              <a href="cv/cv.html" target="_blank" class="btn waves">Dowload cv</a>
+              <a href="cv/cv.html" target="_blank" class="btn waves"
+                >Dowload cv</a
+              >
             </div>
-          </div><!--/.intro__overlay-->
-        </div><!--/.intro__video-->
-      </div><!--/.intro__content-->
+          </div>
+          <!--/.intro__overlay-->
+        </div>
+        <!--/.intro__video-->
+      </div>
+      <!--/.intro__content-->
     </section>
     <!--about me section-->
     <section id="about" class="mt-6">
@@ -98,15 +103,51 @@
               <li>BOTSTRAP.</li>
               <li>GULP, GIT.</li>
             </ul>
-          </div>
+          </div><!--/.content__text-->
           <div class="content__img">
-            <img src="img/about/about__photo.png" class="img" alt="developer__photo">
-          </div>
+            <img
+              src="img/about/about__photo.png"
+              class="img"
+              alt="developer__photo"
+            />
+          </div><!--/.content__img-->
           <div class="content__skils">
-            <div class="skil__bar">
-              <h4>html (70&percnt;)</h4>
+            <div class="skil__bar text__center">
+              <h4>html (75&percnt;)</h4>
+              <div class="skillbar" data-percent="75%">
+                <div class="skillbar-title"><span>HTML5</span></div>
+                <div class="skillbar-bar"></div>
+              </div>
             </div>
-          </div>
+            <div class="skil__bar text__center">
+              <h4>css3 (65&percnt;)</h4>
+              <div class="skillbar" data-percent="65%">
+                <div class="skillbar-title"><span>css3</span></div>
+                <div class="skillbar-bar"></div>
+              </div>
+            </div>
+            <div class="skil__bar text__center">
+              <h4>js (40&percnt;)</h4>
+              <div class="skillbar" data-percent="40%">
+                <div class="skillbar-title"><span>js</span></div>
+                <div class="skillbar-bar"></div>
+              </div>
+            </div>
+            <div class="skil__bar text__center">
+              <h4>jQuery (55&percnt;)</h4>
+              <div class="skillbar" data-percent="55%">
+                <div class="skillbar-title"><span>jQuery</span></div>
+                <div class="skillbar-bar"></div>
+              </div>
+            </div>
+            <div class="skil__bar text__center">
+              <h4>bootstrap (50&percnt;)</h4>
+              <div class="skillbar" data-percent="50%">
+                <div class="skillbar-title"><span>bootstrap</span></div>
+                <div class="skillbar-bar"></div>
+              </div>
+            </div>
+          </div><!--/.content__skils-->
         </div>
       </div>
     </section>
@@ -120,5 +161,8 @@
       Waves.attach(".waves");
       Waves.init();
     </script>
+    <!--use main script-->
+    <!--use skil bar script-->
+    <script src="js/block/skil__p.js"></script>
   </body>
 </html>
