@@ -1,0 +1,53 @@
+//main: ../style.less
+.about__content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content__text{
+  flex-basis: 30%;
+  text-align: right;
+  h3{
+    color: @blue;
+    text-transform: uppercase;
+    font-family: @kanit;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  h4{
+    color: @purple;
+    text-transform: uppercase;
+    font-family: @kanit;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  ul{
+    list-style-type: circle;
+    li{
+      &:first-child{
+        color:@purple-r;
+        text-transform: uppercase;
+        list-style: none;
+      }
+      font-size: 1.5rem;
+      color: @gray-h;
+      margin-bottom: 0.5rem;
+      transition: color 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      &:hover{
+        color: @purple-r;
+        text-shadow: 0 0 1px @purple-r;
+      }
+    }
+  }
+  
+}
+.content__img{
+  flex-basis: 30%;
+}
+.content__skils{
+  flex-basis: 30%;
+}
