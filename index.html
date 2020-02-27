@@ -160,6 +160,14 @@
         <div class="container">
           <div class="address__content">
             <div class="address__collum">
+              <div class="address__icon"></div>
+              <div class="address__text">
+                <h4>address</h4>
+                <p>Ukraine</p>
+                <p>Ivano &mdash; Frankivsk region.</p>
+              </div>
+            </div>
+            <div class="address__collum">
               <div class="address__icon">
                 <svg
                   version="1.1"
@@ -195,14 +203,6 @@
             <div class="address__collum">
               <div class="address__icon"></div>
               <div class="address__text">
-                <h4>address</h4>
-                <p>Ukraine</p>
-                <p>Ivano &mdash; Frankivsk region.</p>
-              </div>
-            </div>
-            <div class="address__collum">
-              <div class="address__icon"></div>
-              <div class="address__text">
                 <h4>email address</h4>
                 <p>19roman23@gmail.com</p>
                 <p>roma@br.if.ua</p>
@@ -216,6 +216,21 @@
       </div>
       <!--/.address__bg-->
     </section>
+    <!--serviess section-->
+    <section id="services" class="mt-6">
+      <div class="container">
+        <div class="titles">
+          <h2>Our services</h2>
+          <h3>We are development creative web sites</h3>
+        </div>
+        <!--/.titless-->
+        <div class="services__content mt-6">
+          <div class="services__collum">
+            
+          </div>
+        </div>
+      </div>
+    </section>
     <!--use vendor script-->
     <!--use jQuery-->
     <script src="js/vendor/jquery-3.3.1.min.js"></script>
@@ -226,8 +241,8 @@
       (function() {
         document.onreadystatechange = () => {
           if (document.readyState === "complete") {
-            let el = document.querySelector("#phone");
-            let myAnimation = new LazyLinePainter(el, {
+            let ph = document.querySelector("#phone");
+            let phAnimation = new LazyLinePainter(ph, {
               ease: "easeLinear",
               strokeWidth: 1,
               strokeOpacity: 1,
@@ -235,11 +250,13 @@
               strokeCap: "square",
               repeat: 100
             });
-            myAnimation.paint();
+            phAnimation.paint();
           }
         };
       })();
     </script>
+    <!--map icon-->
+    <script></script>
     <!--use waves efect https://materializecss.com/waves.html -->
     <script src="js/vendor/waves.min.js"></script>
     <script>
