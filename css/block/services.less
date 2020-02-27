@@ -1,0 +1,41 @@
+//main: ../style.less
+.services__content{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.services__collum{
+  width: 32%;
+  margin-bottom: 4rem;
+  text-align: center;
+  div{
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background: linear-gradient( @purple, @red);
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    line-height: 85px;
+    i{
+      color: @white;
+      font-size: 2rem;
+    }
+  }
+  h5{
+    font-family: @kanit;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    color: @blue;
+  }
+  p{
+    font-family: @kanit;
+    font-size: 1.1rem;
+    color: @gray-h;
+    line-height: 25px;
+    font-weight: 400;
+  }
+}
