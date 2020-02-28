@@ -31,6 +31,21 @@
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
+  -webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  i {
+    color: @white;
+    font-size: 1.7rem;
+    -webkit-transition: font-size 0.2s ease-in-out;
+    transition: font-size 0.2s ease-in-out;
+  }
+  &:hover {
+    background-color: @red;
+    box-shadow: 0 0 8px @red;
+    i {
+      font-size: 1.4rem;
+    }
+  }
 }
 .address__text {
   h4 {
