@@ -71,10 +71,10 @@
           <div class="intro__overlay">
             <div class="intro__content text__center">
               <h3>Hello, i am</h3>
-              <h1>Roman</h1>
-              <h2>Vintonyak</h2>
+              <h1 id="typed"></h1>
+              <h2>Developer</h2>
               <h4>
-                I'm a junior Frontend developer. I developing web sites for 8
+                I'm a junior Frontend developer. I developing web sites for 16
                 months.
               </h4>
               <a href="cv/cv.html" target="_blank" class="btn waves"
@@ -99,9 +99,10 @@
               <p>
                 I'm a junior Frontend developer. I developing web sites for 16
                 months. I work with technologies:
-                <strong>HTML5</strong>&sol;<strong>CSS3</strong>&sol;<strong
-                  >JS&sol;jQuery</strong
-                >&sol;<strong>Bootstrap</strong>&sol;<strong>Git</strong>
+                <strong>HTML5</strong
+                >&sol;<strong>CSS3</strong>&sol;<strong>JS&sol;jQuery</strong>&sol;<strong>Bootstrap</strong>&sol;<strong
+                  >Git</strong
+                >
               </p>
               <p>Work with CSM Wordpress</p>
             </div>
@@ -340,6 +341,19 @@
       "use script";
       Waves.attach(".waves");
       Waves.init();
+    </script>
+    <!--use typed text plagin https://github.com/mattboldt/typed.js/ -->
+    <script src="js/vendor/typed.min.js"></script>
+    <script>
+      var typed = new Typed("#typed", {
+        strings: ["Roman", "Vintonyak"],
+        startDelay: 150,
+        typeSpeed: 250,
+        backSpeed: 150,
+        backDelay: 1000,
+        showCursor: false,
+        loop: true
+      });
     </script>
     <!--use main script-->
     <!--use fixed__header -->
