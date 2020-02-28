@@ -7,7 +7,7 @@ jQuery(document).ready(function(){
     var navBtn = $(this).find(".nav__link").attr('href');
     var ofsetTop = $(navBtn).offset().top;
     $("html, body").animate({
-      scrollTop: ofsetTop - 80
+      scrollTop: ofsetTop - 120
     }, 1000)
   });
 });

@@ -310,6 +310,24 @@
       </div>
       <!--/.container-->
     </section>
+    <!--Testimonials  block-->
+    <div class="testimonials" id="testimonials">
+      <div class="parallax-container">
+        <div class="parallax">
+          <img
+            src="img/testimonials/paralax_bg.jpg"
+            class="img"
+            alt="testimonials"
+          />
+        </div>
+        <div class="container">
+          <div class="testimonilas__content text__center">
+            <h4>testimonials</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--use vendor script-->
     <!--use jQuery-->
     <script src="js/vendor/jquery-3.3.1.min.js"></script>
@@ -341,6 +359,14 @@
       "use script";
       Waves.attach(".waves");
       Waves.init();
+    </script>
+    <!--use paralax efect https://github.com/Dogfalo/materialize -->
+    <script src="js/vendor/materialize.min.js"></script>
+    <script>
+      "use script";
+      jQuery(document).ready(function() {
+        $(".parallax").parallax();
+      });
     </script>
     <!--use typed text plagin https://github.com/mattboldt/typed.js/ -->
     <script src="js/vendor/typed.min.js"></script>
