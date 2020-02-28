@@ -36,7 +36,7 @@
 }
 .testimonilas__slider {
   display: -webkit-box;
-  display: flex;
+  display: flex!important;
   margin-top: 3rem;
   -webkit-box-align: center;
   align-items: center;
@@ -64,6 +64,9 @@
   img {
     border-radius: 50%;
     border: 8px solid @white;
+  }
+  &:focus{
+    outline: none;
   }
 }
 .testimonilas__author {

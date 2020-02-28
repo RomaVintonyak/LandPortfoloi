@@ -320,25 +320,60 @@
             alt="testimonials"
           />
         </div>
+        <!--/.parallax-->
         <div class="container">
           <div class="testimonilas__content text__center">
             <h4>testimonials</h4>
-            <div class="testimonilas__slider">
-              <p>
-                <strong>&ldquo;</strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti incidunt omnis nobis harum delectus ipsa sed et id
-                porro voluptatem, laboriosam asperiores aut eius assumenda.<strong>&rdquo;</strong>
-              </p>
-              <img src="https://placem.at/people?w=100&h=100" alt="logo">
-              <div class="testimonilas__author">
+            <div id="testimonialsSlider">
+              <div class="testimonilas__slider">
+                <p>
+                  <strong>&ldquo;</strong>Lorem, ipsum dolor sit amet
+                  consectetur adipisicing elit. Deleniti incidunt omnis nobis
+                  harum delectus ipsa sed et id porro voluptatem, laboriosam
+                  asperiores aut eius assumenda.<strong>&rdquo;</strong>
+                </p>
+                <img src="https://placem.at/people?w=100&h=100" alt="logo" />
+                <div class="testimonilas__author">
                   <h5>jon brown</h5>
-                <span>Graphic Designer</span>
+                  <span>Graphic Designer</span>
+                </div>
               </div>
+              <div class="testimonilas__slider">
+                <p>
+                  <strong>&ldquo;</strong>Lorem, ipsum dolor sit amet
+                  consectetur adipisicing elit. Deleniti incidunt omnis nobis
+                  harum delectus ipsa sed et id porro voluptatem, laboriosam
+                  asperiores aut eius assumenda.<strong>&rdquo;</strong>
+                </p>
+                <img src="https://placem.at/people?w=100&h=100" alt="logo" />
+                <div class="testimonilas__author">
+                  <h5>Jon Smit</h5>
+                  <span>Web Developer</span>
+                </div>
+              </div>
+              <div class="testimonilas__slider">
+                <p>
+                  <strong>&ldquo;</strong>Lorem, ipsum dolor sit amet
+                  consectetur adipisicing elit. Deleniti incidunt omnis nobis
+                  harum delectus ipsa sed et id porro voluptatem, laboriosam
+                  asperiores aut eius assumenda.<strong>&rdquo;</strong>
+                </p>
+                <img src="https://placem.at/people?w=100&h=100" alt="logo" />
+                <div class="testimonilas__author">
+                  <h5>kate blanch</h5>
+                  <span>Ui/x Designer</span>
+                </div>
+              </div>
+              <!--/.testimonilas__slider-->
             </div>
           </div>
+          <!--/.testimonilas__content-->
         </div>
+        <!--/.container-->
       </div>
+      <!--/.parallax-container-->
     </div>
+    <!--/.testimonials-->
     <!--use vendor script-->
     <!--use jQuery-->
     <script src="js/vendor/jquery-3.3.1.min.js"></script>
@@ -370,6 +405,20 @@
       "use script";
       Waves.attach(".waves");
       Waves.init();
+    </script>
+    <!--use slick slider https://kenwheeler.github.io/slick/ -->
+    <script src="js/vendor/slick.min.js"></script>
+    <script>
+      "use script";
+      const tstSlider = $("#testimonialsSlider");
+      tstSlider.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        dots: true
+      });
     </script>
     <!--use paralax efect https://github.com/Dogfalo/materialize -->
     <script src="js/vendor/materialize.min.js"></script>
