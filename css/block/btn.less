@@ -13,14 +13,17 @@
   position: relative;
   overflow: hidden;
   border: none;
-  &:focus{
+  &:focus {
     outline: none;
   }
-  &--sm{
+  &--sm {
     font-size: 1rem;
     padding: 0.6rem 1rem;
     font-weight: 400;
     letter-spacing: 2px;
+    &::after {
+      left: -35%;
+    }
   }
   &::after {
     content: "";
@@ -35,7 +38,17 @@
     -webkit-transform: rotate(20deg);
     transform: rotate(20deg);
     -webkit-transition: left 0.6s linear;
-    transition: left 0.6s linear;
+    -webkit-transition: left 0.9s linear;
+    transition: left 0.9s linear;
+  }
+  &--sm {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    &::after {
+      left: -35%;
+    }
   }
   &:hover {
     box-shadow: 0 0 20px @purple-r;
