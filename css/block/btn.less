@@ -12,6 +12,16 @@
   transition: box-shadow 0.3s ease-in-out;
   position: relative;
   overflow: hidden;
+  border: none;
+  &:focus{
+    outline: none;
+  }
+  &--sm{
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
   &::after {
     content: "";
     display: block;
@@ -29,6 +39,7 @@
   }
   &:hover {
     box-shadow: 0 0 20px @purple-r;
+    cursor: pointer;
     &::after {
       left: 115%;
     }
