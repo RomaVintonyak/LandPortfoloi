@@ -1,5 +1,5 @@
 //main: ../style.less
-.btn{
+.btn {
   padding: 1.2rem 1.8rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -8,8 +8,29 @@
   font-weight: 600;
   letter-spacing: 3px;
   font-size: 1.1rem;
+  -webkit-transition: box-shadow 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out;
-  &:hover{
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 130%;
+    position: absolute;
+    top: -20%;
+    left: -15%;
+    background-color: rgba(@white, 0.4);
+    box-shadow: 0 0 15px rgba(@white, 0.8);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+    -webkit-transition: left 0.6s linear;
+    transition: left 0.6s linear;
+  }
+  &:hover {
     box-shadow: 0 0 20px @purple-r;
+    &::after {
+      left: 115%;
+    }
   }
 }
