@@ -1,5 +1,5 @@
 //main: ../style.less
-body.lb-disable-scrolling {
+body.lb-disable-scrolling{
   overflow: hidden;
 }
 
@@ -8,7 +8,7 @@ body.lb-disable-scrolling {
   top: 0;
   left: 0;
   z-index: 9999;
-  background-color: black;
+  background-color: @blue;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
   display: none;
@@ -30,10 +30,10 @@ body.lb-disable-scrolling {
   height: auto;
   max-width: inherit;
   max-height: none;
-  border-radius: 5px;
+  border-radius: 10px;
 
   /* Image border */
-  border: 2px solid @blue;
+  border: 2px solid white;
 }
 
 .lightbox a img {
