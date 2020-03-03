@@ -1,5 +1,57 @@
 //main: ../style.less
-#experience{
+#experience {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(@purple),
+    to(@red)
+  );
   background: linear-gradient(to right, @purple, @red);
   padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.expirience__content {
+  margin-top: 1rem;
+  width: 100%;
+}
+.expirience__row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.row__title {
+  flex-basis: 40%;
+  h4 {
+    font-family: @kanit;
+    font-size: 1.3rem;
+    color: @white;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  p {
+    color: @white;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+.row__line {
+  width: 10px;
+  height: 3rem;
+  background-color: @gray;
+}
+.row__text {
+  flex-basis: 50%;
+  color: @white;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
