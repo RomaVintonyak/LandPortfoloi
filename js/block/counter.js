@@ -5,7 +5,7 @@ jQuery(document).ready(function() {
     var wScroll = $(this).scrollTop();
     var counterItem = $(".counter__number");
     var setTime = 20000;
-    if (wScroll >= hTop) {
+    if(wScroll >= hTop) {
       counterItem.each(function() {
         $(this)
           .prop("Counter", 0)
