@@ -387,18 +387,18 @@
         </div>
         <!--/.titless-->
         <div class="portfolio__link text__center">
-          <button type="button" class="btn btn--sm waves waves-effect">
+          <button type="button" class="btn btn--sm waves waves-effect" data-filter="all">
             All
           </button>
-          <button type="button" class="btn btn--sm waves waves-effect">
+          <button type="button" class="btn btn--sm waves waves-effect"  data-filter="web">
             Website
           </button>
-          <button type="button" class="btn btn--sm waves waves-effect">
+          <button type="button" class="btn btn--sm waves waves-effect" data-filter="land">
             Landing
           </button>
         </div>
         <div class="portfolio__content">
-          <div class="portfolio__box" id="landP">
+          <div class="portfolio__box" data-cat="land">
             <img src="img/portfolio/@brukavkaif__sm.jpg" alt="work" />
             <ul class="portfolio__icon">
               <li>
@@ -420,7 +420,7 @@
               <span class="post">BrukivkaIF web site</span>
             </div>
           </div>
-          <div class="portfolio__box">
+          <div class="portfolio__box" data-cat="land">
             <img src="img/portfolio/restrunt__sm.jpg" alt="work" />
             <ul class="portfolio__icon">
               <li>
@@ -440,7 +440,7 @@
               <span class="post">Restrunt web site</span>
             </div>
           </div>
-          <div class="portfolio__box">
+          <div class="portfolio__box" data-cat="land">
             <img src="img/portfolio/exploore__sm.jpg" alt="work" />
             <ul class="portfolio__icon">
               <li>
@@ -462,7 +462,7 @@
               >
             </div>
           </div>
-          <div class="portfolio__box">
+          <div class="portfolio__box" data-cat="web">
             <img src="img/portfolio/loren__sm.jpg" alt="work" />
             <ul class="portfolio__icon">
               <li>
@@ -484,7 +484,7 @@
               <span class="post">Wedding Decor Loren web site</span>
             </div>
           </div>
-          <div class="portfolio__box">
+          <div class="portfolio__box" data-cat="web">
             <img src="img/portfolio/carePoint__sm.jpg" alt="work" />
             <ul class="portfolio__icon">
               <li>
@@ -506,7 +506,7 @@
               <span class="post">CarePoint web site template</span>
             </div>
           </div>
-          <div class="portfolio__box">
+          <div class="portfolio__box" data-cat="web">
             <img src="img/portfolio/cleaning__sm.jpg" alt="work" />
             <ul class="portfolio__icon">
               <li>
@@ -535,7 +535,7 @@
     <!--counter block-->
     <div class="counter__bg mt-6">
       <div class="container">
-        <div class="counter__content">
+        <div class="counter__content rellax" data-rellax-speed="-0.1">
           <div class="counter__collum">
             <i class="fas fa-trophy"></i>
             <h4 class="counter__number">534</h4>
@@ -696,5 +696,7 @@
     <script src="js/block/skil__p.js"></script>
     <!--use counter script-->
     <script src="js/block/counter.js"></script>
+    <!--use portfolio__tab-->
+    <script src="js/block/portfolio__tab.js"></script>
   </body>
 </html>
