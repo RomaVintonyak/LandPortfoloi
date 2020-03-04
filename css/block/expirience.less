@@ -8,6 +8,8 @@
     to(@red)
   );
   background: linear-gradient(to right, @purple, @red);*/
+  position: relative;
+  z-index: -3;
 
   -webkit-animation-name: divBG;
   animation-name: divBG;
@@ -23,6 +25,17 @@
 
   padding-top: 6rem;
   padding-bottom: 6rem;
+
+  &::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(@black, 0.2);
+    z-index: -1;
+  }
 }
 .expirience__content {
   margin-top: 1rem;
