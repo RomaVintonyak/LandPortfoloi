@@ -1,0 +1,38 @@
+//main: ../style.less
+#footer {
+  background-color: @blue;
+  width: 100%;
+  padding: 1.5rem 0;
+}
+.fixed__footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: 1rem 0!important;
+  transition: padding 0.3s linear;
+}
+.footer__social {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 1rem;
+  a {
+    text-decoration: none;
+  }
+}
+.footer__copyright {
+  text-align: center;
+  font-family: @kanit;
+  font-size: 1rem;
+  font-weight: 400;
+  color: @white;
+  strong {
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+}
