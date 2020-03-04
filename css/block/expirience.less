@@ -1,13 +1,26 @@
 //main: ../style.less
 #experience {
-  background: -webkit-gradient(
+  /*background: -webkit-gradient(
     linear,
     left top,
     right top,
     from(@purple),
     to(@red)
   );
-  background: linear-gradient(to right, @purple, @red);
+  background: linear-gradient(to right, @purple, @red);*/
+
+  -webkit-animation-name: divBG;
+  animation-name: divBG;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+
+
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
@@ -54,4 +67,38 @@
   color: @white;
   font-size: 1.2rem;
   font-weight: 400;
+}
+@-webkit-keyframes divBG {
+  0% {
+    background-color: @purple;
+  }
+  25% {
+    background-color: @purple-r;
+  }
+  50% {
+    background-color: @red;
+  }
+  75% {
+    background-color: @purple-r;
+  }
+  100% {
+    background-color: @purple;
+  }
+}
+@keyframes divBG {
+  0% {
+    background-color: @purple;
+  }
+  25% {
+    background-color: @purple-r;
+  }
+  50% {
+    background-color: @red;
+  }
+  75% {
+    background-color: @purple-r;
+  }
+  100% {
+    background-color: @purple;
+  }
 }
