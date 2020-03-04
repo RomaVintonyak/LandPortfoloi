@@ -1,0 +1,73 @@
+//main: ../style.less
+.blog__content {
+  margin: 6rem 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  align-items: flex-start;
+}
+.blog__collum {
+  overflow: hidden;
+  flex-basis: 30%;
+  text-align: left;
+  -webkit-transition: box-shadow 0.4s ease-in-out,
+    background-color 0.4s ease-in-out;
+  transition: box-shadow 0.4s ease-in-out, background-color 0.4s ease-in-out;
+  img {
+    margin-bottom: 1.1rem;
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: -webkit-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  }
+  h5 {
+    font-family: @kanit;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: @gray;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem 0.3rem;
+    -webkit-transition: color 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out;
+  }
+  h4 {
+    font-family: @kanit;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: @blue;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem 0.3rem;
+    -webkit-transition: color 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out;
+  }
+  p {
+    font-size: 1.2rem;
+    color: @gray-h;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 20px;
+    padding: 0.3rem 0.3rem;
+    -webkit-transition: color 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out;
+  }
+  &:hover {
+    box-shadow: 30px 30px 30px @red;
+    background-color: @purple-r;
+    img {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    h5 {
+      color: @white;
+    }
+    h4 {
+      color: @white;
+    }
+    p {
+      color: @white;
+    }
+  }
+}
