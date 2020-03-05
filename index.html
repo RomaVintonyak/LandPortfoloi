@@ -694,11 +694,16 @@
             </div>
             <!--/.titless-->
             <form method="POST" class="form__send">
-              <input type="text" name="Name" placeholder="Name" />
-              <input type="tel" name="Phone" placeholder="Phone" />
-              <input type="email" name="Email" placeholder="Email" />
-              <textarea name="Message" placeholder="Message"></textarea>
-              <button type="button" class="btn waves">send message</button>
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Site Name">
+            <input type="hidden" name="admin_email" value="admin@mail.com">
+            <input type="hidden" name="form_subject" value="Form Subject">
+            <!-- END Hidden Required Fields -->
+            <input type="text" name="Name" placeholder="Name" required/>
+            <input type="tel" name="Phone" placeholder="Phone" required/>
+            <input type="email" name="E-mail" placeholder="Email" required/>
+            <textarea name="Message" placeholder="Message"></textarea>
+            <button type="button" class="btn waves">send message</button>
             </form>
           </div>
           <!--/.container-->
