@@ -1,32 +1,20 @@
 //main: ../style.less
 #experience {
-  /*background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(@purple),
-    to(@red)
-  );
-  background: linear-gradient(to right, @purple, @red);*/
   position: relative;
   z-index: -3;
-
   -webkit-animation-name: divBG;
   animation-name: divBG;
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-
-
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
   padding-top: 6rem;
   padding-bottom: 6rem;
-
-  &::after{
+  &::after {
     content: "";
     position: absolute;
     top: 0;
@@ -83,35 +71,105 @@
 }
 @-webkit-keyframes divBG {
   0% {
-    background-color: @purple;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(@purple),
+      to(@red)
+    );
+    background: linear-gradient(to right, @purple, @red);
   }
   25% {
-    background-color: @purple-r;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(@purple),
+      to(@red)
+    );
+    background: linear-gradient(to bottom, @purple, @red);
   }
   50% {
-    background-color: @red;
+    background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(@purple),
+      to(@red)
+    );
+    background: linear-gradient(to left, @purple, @red);
   }
   75% {
-    background-color: @purple-r;
+    background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(@purple),
+      to(@red)
+    );
+    background: linear-gradient(to top, @purple, @red);
   }
   100% {
-    background-color: @purple;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(@purple),
+      to(@red)
+    );
+    background: linear-gradient(to right, @purple, @red);
   }
 }
 @keyframes divBG {
   0% {
-    background-color: @purple;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(@purple),
+      to(@red)
+    );
+    background: linear-gradient(to right, @purple, @red);
   }
   25% {
-    background-color: @purple-r;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(@purple),
+      to(@red)
+    );
+    background: linear-gradient(to bottom, @purple, @red);
   }
   50% {
-    background-color: @red;
+    background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(@purple),
+      to(@red)
+    );
+    background: linear-gradient(to left, @purple, @red);
   }
   75% {
-    background-color: @purple-r;
+    background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(@purple),
+      to(@red)
+    );
+    background: linear-gradient(to top, @purple, @red);
   }
   100% {
-    background-color: @purple;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(@purple),
+      to(@red)
+    );
+    background: linear-gradient(to right, @purple, @red);
   }
 }
