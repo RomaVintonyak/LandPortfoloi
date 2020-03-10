@@ -1,0 +1,45 @@
+//main: ../style.less
+.burger__button{
+  width: 2.5rem;
+  height: 2.5rem;
+  background: linear-gradient(to right, @purple,@red);
+  border-radius: 3px;
+  position: relative;
+  transition: box-shadow 0.3s linear;
+  &:hover{
+    cursor: pointer;
+    background: linear-gradient(to left, @purple,@red);
+    box-shadow: 0 0 10px @purple-r;
+    &:active{
+      background: linear-gradient(to top, @purple,@red);
+    }
+  }
+  span{
+    width: 2rem;
+    height: 3px;
+    background-color: @white;
+    position: absolute;
+    top: 46%;
+    left: 10%;
+    &:first-child{
+      margin-top: -0.5rem;
+    }
+    &:last-child{
+      margin-top: 0.55rem;
+    }
+    &.burger__open{
+      &:first-child{
+        left: -100%;
+      }
+      &:nth-child(2){
+        transform: rotate(45deg);
+      }
+      &:nth-child(3){
+        transform: rotate(45deg);
+      }
+      &:last-child{
+        right: -100%;
+      }
+    }
+  }
+}
