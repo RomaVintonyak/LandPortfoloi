@@ -1,44 +1,82 @@
 //main: ../style.less
-.burger__button{
+.burger__button {
   width: 2.5rem;
   height: 2.5rem;
-  background: linear-gradient(to right, @purple,@red);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(@purple),
+    to(@red)
+  );
+  background: linear-gradient(to right, @purple, @red);
   border-radius: 3px;
   position: relative;
+  -webkit-transition: box-shadow 0.3s linear;
   transition: box-shadow 0.3s linear;
-  &:hover{
+  overflow: hidden;
+  &:hover {
     cursor: pointer;
-    background: linear-gradient(to left, @purple,@red);
+    background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(@purple),
+      to(@red)
+    );
+    background: linear-gradient(to left, @purple, @red);
     box-shadow: 0 0 10px @purple-r;
-    &:active{
-      background: linear-gradient(to top, @purple,@red);
+    &:active {
+      background: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(@purple),
+        to(@red)
+      );
+      background: linear-gradient(to top, @purple, @red);
     }
   }
-  span{
+  span {
     width: 2rem;
     height: 3px;
     background-color: @white;
     position: absolute;
     top: 46%;
     left: 10%;
-    &:first-child{
-      margin-top: -0.5rem;
+    opacity: 1;
+    -webkit-transition: background-color 0.4s linear, opacity 0.4s linear,
+      left 0.4s linear, -webkit-transform 0.4s linear;
+    transition: background-color 0.4s linear, opacity 0.4s linear,
+      left 0.4s linear, -webkit-transform 0.4s linear;
+    transition: background-color 0.4s linear, transform 0.4s linear,
+      opacity 0.4s linear, left 0.4s linear;
+    transition: background-color 0.4s linear, transform 0.4s linear,
+      opacity 0.4s linear, left 0.4s linear, -webkit-transform 0.4s linear;
+    &:first-child {
+      margin-top: -0.55rem;
     }
-    &:last-child{
-      margin-top: 0.55rem;
+    &:last-child {
+      margin-top: 0.52rem;
     }
-    &.burger__open{
-      &:first-child{
-        left: -100%;
+    &.burger__open {
+      &:first-child {
+        left: -90%;
+        opacity: 0;
       }
-      &:nth-child(2){
+      &:nth-child(2) {
+        -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
+        background-color: @blue;
       }
-      &:nth-child(3){
-        transform: rotate(45deg);
+      &:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        background-color: @blue;
       }
-      &:last-child{
-        right: -100%;
+      &:last-child {
+        left: 100%;
+        opacity: 0;
       }
     }
   }
