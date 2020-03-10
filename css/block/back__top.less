@@ -1,0 +1,84 @@
+//main: ../style.less
+#backTop {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  z-index: 3;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(@purple),
+    to(@red)
+  );
+  background: linear-gradient(to right, @purple, @red);
+  text-align: center;
+  opacity: 0.7;
+  -webkit-animation-name: vAlight;
+  animation-name: vAlight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  -webkit-transition: opacity 0.4s linear, box-shadow 0.4s linear,
+    line-height 0.4s linear;
+  transition: opacity 0.4s linear, box-shadow 0.4s linear,
+    line-height 0.4s linear;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px @purple-r;
+    opacity: 1;
+    &:active {
+      box-shadow: 0 0 15px @purple-r;
+    }
+  }
+  i {
+    color: @white;
+    font-size: 1.2rem;
+  }
+}
+@-webkit-keyframes vAlight {
+  0% {
+    line-height: 50px;
+  }
+  20% {
+    line-height: 44px;
+  }
+  40% {
+    line-height: 38px;
+  }
+  60% {
+    line-height: 32px;
+  }
+  80% {
+    line-height: 26px;
+  }
+  100% {
+    line-height: 22px;
+  }
+}
+@keyframes vAlight {
+  0% {
+    line-height: 50px;
+  }
+  20% {
+    line-height: 44px;
+  }
+  40% {
+    line-height: 38px;
+  }
+  60% {
+    line-height: 32px;
+  }
+  80% {
+    line-height: 26px;
+  }
+  100% {
+    line-height: 22px;
+  }
+}
