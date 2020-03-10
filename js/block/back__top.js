@@ -12,6 +12,10 @@ jQuery(document).ready(function() {
   });
   topBtn.on("click", function(event) {
     event.preventDefault();
+    /*close burger btn & mobile menu */
+    $("#burgerToggle").find("span").removeClass("burger__open");
+    $(".mobile__menu").removeClass("mobile__menu--open"); 
+    /*scroll script*/
     $("html, body").animate(
       {
         scrollTop: 0
