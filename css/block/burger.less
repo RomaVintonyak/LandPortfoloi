@@ -1,5 +1,6 @@
 //main: ../style.less
 .burger__button {
+  display: none;
   width: 2.5rem;
   height: 2.5rem;
   background: -webkit-gradient(
@@ -79,5 +80,8 @@
         opacity: 0;
       }
     }
+  }
+  @media @tablet{
+    display: block;
   }
 }

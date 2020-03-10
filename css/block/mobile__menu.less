@@ -25,10 +25,33 @@
     left: 0%;
     visibility: visible;
   }
-  .nav__item {
+  .item__mobile {
     margin-bottom: 2rem;
     &:last-child {
       margin-bottom: 0;
     }
+  }
+}
+.item__mobile {
+  height: 2.5rem;
+  width: 7rem;
+  border: 2px solid transparent;
+  text-align: center;
+  line-height: 36px;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  a {
+    text-decoration: none;
+    color: @white;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: @kanit;
+  }
+  &:hover {
+    cursor: pointer;
+    border-color: @red;
+    background-color: @red;
+    box-shadow: 0 0 10px @red;
   }
 }
