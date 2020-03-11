@@ -27,6 +27,15 @@
     text-transform: uppercase;
     color: @white;
     font-weight: 700;
+    @media @mobile {
+      font-size: 2rem;
+    }
+    @media @mobile {
+      font-size: 1.7rem;
+    }
+  }
+  @media @mobile-sm {
+    top: -4%;
   }
 }
 .testimonilas__slider {
@@ -53,10 +62,20 @@
         vertical-align: bottom;
       }
     }
+    @media @mobile {
+      font-size: 1.1rem;
+    }
+    @media @mobile-sm {
+      width: 85%;
+      font-size: 1rem;
+    }
   }
   img {
     border-radius: 50%;
-    border: 8px solid @white;
+    border: 6px solid @white;
+    @media @mobile {
+      border: 4px solid @white;
+    }
   }
   &:focus {
     outline: none;
@@ -70,11 +89,21 @@
     color: @white;
     font-size: 2rem;
     font-weight: 700;
+    @media @mobile {
+      font-size: 1.6rem;
+    }
+    @media @mobile-sm {
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+    }
   }
   span {
     color: @purple;
     font-size: 1rem;
     font-style: italic;
     font-weight: 400;
+    @media @mobile {
+      font-size: 0.9rem;
+    }
   }
 }
