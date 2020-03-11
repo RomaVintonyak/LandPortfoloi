@@ -7,6 +7,14 @@
   justify-content: space-between;
   -webkit-box-align: start;
   align-items: flex-start;
+  @media @tablet{
+    margin: 4rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media @mobile{
+    margin: 2rem 0;
+  }
 }
 .blog__collum {
   overflow: hidden;
@@ -69,5 +77,18 @@
     p {
       color: @white;
     }
+  }
+  @media @tablet{
+    flex-basis: 55%;
+    margin-bottom: 1.5rem;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  @media @mobile{
+    flex-basis: 80%;
+  }
+  @media @mobile-sm{
+    flex-basis: 100%;
   }
 }
