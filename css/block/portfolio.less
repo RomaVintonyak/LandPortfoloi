@@ -5,9 +5,15 @@
   margin-top: 2rem;
   button {
     margin-right: 1rem;
+    @media @mobile-sm {
+      margin-right: 0.2rem;
+    }
     &:last-child {
       margin-right: 0;
     }
+  }
+  @media @mobile {
+    margin-top: 1rem;
   }
 }
 .portfolio__content {
@@ -20,6 +26,14 @@
   justify-content: space-between;
   margin-top: 2rem;
   flex-wrap: wrap;
+  @media @tablet {
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+  @media @mobile {
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
 }
 .portfolio__box {
   width: 30%;
@@ -64,6 +78,17 @@
       top: 0;
       opacity: 1;
     }
+  }
+  @media @tablet {
+    width: 40%;
+  }
+  @media @mobile {
+    width: 80%;
+    margin-bottom: 1.5rem;
+  }
+  @media @mobile-sm {
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
 .portfolio__icon {
@@ -133,10 +158,16 @@
     font-size: 1.5rem;
     color: @white;
     font-weight: 700;
+    @media @mobile-sm {
+      font-size: 1.3rem;
+    }
   }
   span {
     color: @white;
     font-style: 1rem;
     font-weight: 400;
+    @media @mobile-sm {
+      font-size: 0.9rem;
+    }
   }
 }
