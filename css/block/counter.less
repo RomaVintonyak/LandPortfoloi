@@ -20,6 +20,15 @@
     z-index: 2;
     background-color: rgba(@blue, 0.8);
   }
+  @media @tablet {
+    height: 16rem;
+  }
+  @media @mobile {
+    height: 14rem;
+  }
+  @media @mobile-sm {
+    height: 12rem;
+  }
 }
 .counter__content {
   display: -webkit-box;
@@ -36,6 +45,15 @@
     font-size: 3.5rem;
     color: @white;
     margin-bottom: 0.5rem;
+    @media @tablet {
+      font-size: 2.5rem;
+    }
+    @media @mobile {
+      font-size: 1.6rem;
+    }
+    @media @mobile-sm {
+      font-size: 1.2rem;
+    }
   }
   h4 {
     font-family: @kanit;
@@ -43,11 +61,29 @@
     font-weight: 700;
     color: @white;
     margin-bottom: 0.5rem;
+    @media @tablet {
+      font-size: 2.4rem;
+    }
+    @media @mobile {
+      font-size: 1.6rem;
+    }
+    @media @mobile-sm {
+      font-size: 1.2rem;
+    }
   }
   p {
     font-size: 1.5rem;
     color: @white;
     font-weight: 400;
     text-transform: uppercase;
+    @media @tablet {
+      font-size: 1.3rem;
+    }
+    @media @mobile {
+      font-size: 1rem;
+    }
+    @media @mobile-sm {
+      font-size: 0.8rem;
+    }
   }
 }
