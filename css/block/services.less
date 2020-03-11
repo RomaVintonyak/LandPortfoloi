@@ -56,6 +56,9 @@
     color: @blue;
     -webkit-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
+    @media @mobile-sm{
+      font-size: 1.6rem;
+    }
   }
   p {
     font-family: @kanit;
@@ -65,6 +68,9 @@
     font-weight: 400;
     -webkit-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
+    @media @mobile-sm{
+      font-size: 0.9rem;
+    }
   }
   &:hover {
     -webkit-transform: translateX(-10px);
@@ -77,6 +83,14 @@
     p {
       color: @red;
     }
+  }
+  @media @tablet{
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+  @media @mobile{
+    width: 100%;
+    margin-bottom: 1.5rem;
   }
 }
 @-webkit-keyframes divBG {
