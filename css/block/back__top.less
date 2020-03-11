@@ -25,7 +25,6 @@
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
   -webkit-transition: opacity 0.4s linear, box-shadow 0.4s linear,
     line-height 0.4s linear;
   transition: opacity 0.4s linear, box-shadow 0.4s linear,
@@ -36,7 +35,7 @@
     opacity: 1;
     &:active {
       box-shadow: 0 0 15px @purple-r;
-      i{
+      i {
         color: @blue;
       }
     }
@@ -44,6 +43,14 @@
   i {
     color: @white;
     font-size: 1.2rem;
+    -webkit-animation-name: showIcon;
+    animation-name: showIcon;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
   }
 }
 @-webkit-keyframes vAlight {
@@ -84,5 +91,45 @@
   }
   100% {
     line-height: 22px;
+  }
+}
+@-webkit-keyframes showIcon {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes showIcon {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
   }
 }
