@@ -11,6 +11,12 @@
   -webkit-box-align: center;
   align-items: center;
   padding: 3rem 0;
+  @media @tablet {
+    padding: 1rem 0;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
 }
 .address__collum {
   display: -webkit-box;
@@ -18,6 +24,23 @@
   -webkit-box-align: center;
   align-items: center;
   justify-content: space-around;
+  @media @tablet {
+    width: 40%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media @mobile {
+    width: 52%;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+  }
+  @media @mobile-sm {
+    width: 100%;
+  }
 }
 .address__icon {
   width: 4rem;
@@ -31,7 +54,8 @@
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
-  -webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   i {
     color: @white;
