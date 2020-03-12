@@ -23,20 +23,20 @@
   h3 {
     color: @blue;
     text-transform: uppercase;
-  
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 700;
     letter-spacing: 2px;
+    margin-bottom: 1rem;
     @media @mobile-sm {
       font-size: 1.8rem;
     }
   }
   h4 {
-    color: @gray-h;
+    color: @purple;
     text-transform: uppercase;
-
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
     @media @mobile-sm {
       font-size: 1.3rem;
     }
@@ -51,25 +51,52 @@
     flex-basis: 100%;
   }
 }
-.content__resume {
-  margin-top: 1rem;
+.about__resume{
   display: -webkit-box;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  justify-content: space-around;
+          align-items: flex-start;
 }
-.icon__resume {
-  width: 33%;
-  height: 3rem;
-  margin-bottom: 0.2rem;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  i {
-    font-size: 2.8rem;
+.about__date{
+  flex-basis: 60%;
+}
+.content__date {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: center;
+          align-items: center;
+  p {
+    font-size: 1rem;
     color: @blue;
+    font-weight: 700;
+  }
+  span {
+    color: @blue;
+    font-size: 0.9rem;
+    font-weight: 400;  
+  }
+}
+.content__icon{
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  flex-wrap: wrap;
+  flex-basis: 35%;
+  i{
+    margin: 0.2rem 0.5rem;
+    color: @blue;
+    font-size: 1.5rem;
     -webkit-animation-name: iconZoom;
     animation-name: iconZoom;
     -webkit-animation-duration: 5s;
@@ -85,61 +112,13 @@
     transition: transform 0.5s linear;
     transition: transform 0.5s linear, -webkit-transform 0.5s linear;
   }
-  &:hover {
-    .text__resume {
-      opacity: 1;
-      cursor: pointer;
-    }
-    i {
-      -webkit-animation-play-state: paused;
-      animation-play-state: paused;
-    }
-  }
 }
-.text__resume {
-  position: absolute;
-  z-index: 2;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-
-  font-weight: 400;
-  font-size: 0.9rem;
-  background: @gray;
-  box-shadow: 0 0 10px @gray;
-  color: @red;
-  border-radius: 5px;
-  padding: 0.3rem 0.3rem;
-  opacity: 0;
-  -webkit-transition: opacity 0.5s linear;
-  transition: opacity 0.5s linear;
-  @media @mobile-sm {
-    font-size: 0.8rem;
-  }
-}
-.content__date {
-  margin-top: 0.2rem;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-direction: row;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  p {
-  
-    font-size: 1.3rem;
-    color: @gray-h;
-    font-weight: 400;
-  }
-  span {
-    color: @gray-h;
-    font-size: 1rem;
-    font-weight: 400;
-  }
+.byography___resume{
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: left;
+  color: @blue;
+  line-height: 2;  
 }
 .content__img {
   flex-basis: 40%;
@@ -168,24 +147,26 @@
   }
 }
 .skil__bar {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   &:last-child {
     margin-bottom: 0;
   }
   h4 {
-    
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 400;
     color: @blue;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.4rem;
+  }
+  @media @tablet{
+    margin-bottom: 1rem;
   }
 }
 .skillbar {
   width: 100%;
-  height: 1.5rem;
+  height: 1rem;
   background-color: @red;
-  border-radius: 5px;
+  border-radius: 8px;
   position: relative;
   &:hover {
     cursor: pointer;
@@ -200,10 +181,11 @@
   text-transform: uppercase;
 }
 .skillbar-bar {
-  border-radius: 5px;
+  border-radius: 8px;
   width: 0;
   height: 100%;
-  background-color: @purple;
+  background: -webkit-gradient(linear, left top, right top, from(@purple), to(@purple-r));
+  background: linear-gradient(to right, @purple, @purple-r);
 }
 @-webkit-keyframes iconZoom {
   0% {
