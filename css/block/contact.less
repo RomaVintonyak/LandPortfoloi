@@ -67,7 +67,8 @@
   align-items: flex-start;
   flex-wrap: wrap;
   input {
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+            flex-grow: 1;
     height: 3rem;
     border: none;
     padding-left: 1rem;
@@ -119,9 +120,12 @@
   }
   button {
     margin-top: 1.5rem;
-    margin-left: calc(50% - 111.5px);
+    margin-left: calc(50% - 95px);
     @media @notebook {
       margin-top: 0.8rem;
+    }
+    @media @mobile-sm{
+      margin-left: calc(50% - 87.5px);
     }
   }
   @media (min-width: 1260px) {
