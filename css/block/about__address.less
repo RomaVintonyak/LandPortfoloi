@@ -43,8 +43,8 @@
   }
 }
 .address__icon {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   background-color: @white;
   border-radius: 50%;
   margin-right: 1rem;
@@ -56,20 +56,21 @@
   align-items: center;
   -webkit-transition: background-color 0.2s ease-in-out,
     box-shadow 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   a{
     text-decoration: none;
-  }
-  i {
-    background: linear-gradient(45deg, @red 33%, @purple 66%, @purple-r);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: @white;
-    font-size: 1.7rem;
+    &:focus{
+      outline: none;
+    }
   }
   &:hover {
     background-color: @gray;
     box-shadow: 0 0 8px @gray;
+  }
+  @media @mobile-sm{
+    width: 4rem;
+    height: 4rem;
   }
 }
 .address__text {

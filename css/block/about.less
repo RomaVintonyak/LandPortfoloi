@@ -77,11 +77,18 @@
     font-size: 1rem;
     color: @blue;
     font-weight: 700;
+    @media @mobile-sm{
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
   }
   span {
     color: @blue;
     font-size: 0.9rem;
     font-weight: 400;  
+    @media @mobile-sm{
+      font-size: 0.7rem;
+    }
   }
 }
 .content__icon{
@@ -111,6 +118,10 @@
     transition: -webkit-transform 0.5s linear;
     transition: transform 0.5s linear;
     transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+    @media @mobile-sm{
+      margin: 0.1rem 0.3rem;
+      font-size: 1rem;
+    }
   }
 }
 .byography___resume{
