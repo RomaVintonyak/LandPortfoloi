@@ -4,6 +4,16 @@
   overflow: hidden;
   height: 25rem;
   width: 100%;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background-color: rgba(@blue, 0.5);
+  }
 }
 .testimonials__bg {
   position: absolute;
@@ -25,7 +35,7 @@
     font-size: 3rem;
     text-transform: uppercase;
     color: @white;
-    font-weight: 700;
+    font-weight: 600;
     @media @mobile {
       font-size: 2rem;
     }
@@ -45,12 +55,12 @@
   justify-content: space-between;
   p {
     width: 50%;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: @white;
     font-style: italic;
     stroke-width: 400;
     strong {
-      font-size: 3rem;
+      font-size: 2rem;
       &:first-child {
         margin-right: 0.6rem;
       }
@@ -81,11 +91,11 @@
 }
 .testimonilas__author {
   h5 {
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     color: @white;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
     @media @mobile {
       font-size: 1.6rem;
     }
@@ -95,8 +105,8 @@
     }
   }
   span {
-    color: @purple;
-    font-size: 1rem;
+    color: @purple-r;
+    font-size: 1.2rem;
     font-style: italic;
     font-weight: 400;
     @media @mobile {
