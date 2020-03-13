@@ -1,14 +1,15 @@
 //main: ../style.less
-.nav__menu{
+.nav__menu {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 100%;
-  @media @tablet{
+  @media @tablet {
+    -webkit-box-pack: justify;
     justify-content: space-between;
   }
 }
-.nav__logo{
+.nav__logo {
   display: none;
   height: 2.5rem;
   width: 10rem;
@@ -18,45 +19,52 @@
   color: @white;
   font-size: 1rem;
   font-weight: 400;
-  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  i{
+  -webkit-transition: border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  i {
     color: @red;
     font-size: 1.3rem;
+    -webkit-transition: color 0.3s linear;
     transition: color 0.3s linear;
   }
-  &:hover{
+  &:hover {
     border-color: @red;
     background-color: @red;
     box-shadow: 0 0 10px @red;
-    i{
+    i {
       color: @blue;
     }
   }
-  @media @tablet{
+  @media @tablet {
     display: block;
   }
 }
-.nav__item{
+.nav__item {
   height: 2.5rem;
   width: 9rem;
   border: 2px solid transparent;
   text-align: center;
   line-height: 35px;
-  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  a{
+  -webkit-transition: border-color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  a {
     text-decoration: none;
     color: @white;
     font-size: 1.2rem;
     font-weight: 400;
     text-transform: uppercase;
   }
-  &:hover{
+  &:hover {
     cursor: pointer;
     border-color: @red;
     background-color: @red;
     box-shadow: 0 0 10px @red;
   }
-  @media @tablet{
+  @media @tablet {
     display: none;
   }
 }
