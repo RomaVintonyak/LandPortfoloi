@@ -1,0 +1,68 @@
+//main: ../style.less
+.preloader{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: @blue;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--done{
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.loader{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  li{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    animation-name: load;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    &:nth-child(1){
+      background-color: @red;
+      animation-delay: -1s;
+      box-shadow: 0 0 40px @red;
+    }
+    &:nth-child(2){
+      background-color: @purple-r;
+      animation-delay: -0.8s;
+      box-shadow: 0 0 40px @purple-r;
+    }
+    &:nth-child(3){
+      background-color: @purple;
+      animation-delay: -0.6s;
+      box-shadow: 0 0 40px @purple;
+    }
+    &:nth-child(4){
+      background-color: @red;
+      animation-delay: -0.4s;
+      box-shadow: 0 0 40px @red;
+    }
+    &:nth-child(5){
+      background-color: @purple-r;
+      animation-delay: -0.2s;
+      box-shadow: 0 0 40px @purple-r;
+    }
+    
+  }
+}
+@keyframes load{
+  0%, 40%, 100%{
+    transform: scale(0.2);
+  }
+  20%{
+    transform: scale(0.6);
+  }
+}
